@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch APIs</title>
+</head>
+<body>
+    <h1>Fetching APIs</h1>
+    <script>
+   
+        let a="https://goweather.herokuapp.com/weather/chandigarh";
+        let p=fetch(a);
+        p.then((response)=>{
+            return response.json()
+        }).then((x)=>{
+            console.log(x);
+            document.write(x.temperature);
+        })
+ 
+    </script>
+</body>
+</html>
