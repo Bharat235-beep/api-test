@@ -9,16 +9,16 @@
     <h1>Fetching APIs</h1>
     <script>
    
-        // let a="https://goweather.herokuapp.com/weather/chandigarh";
-        let a="https://inshorts.deta.dev/news?category=sports";
+         let a="https://goweather.herokuapp.com/weather/chandigarh";
+    
         fetch(a)
         .then((response)=>{
             return response.json()
         }).then((x)=>{
             console.log(x);
-            document.write(x.temperature);
+            document.write(x.temperature)
+            
         }).catch((error)=>console.log(error))
- 
     </script>
 </body>
 </html>
